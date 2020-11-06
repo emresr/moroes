@@ -4,7 +4,7 @@ import "./App.css"
 import Header from "./components/Header"
 import List from "./components/List"
 
-function App() {
+function Links() {
 	return (
 		<div class="tm-container">
 			<div class="tm-row">
@@ -14,4 +14,4 @@ function App() {
 	)
 }
 
-export default App
+export default Links

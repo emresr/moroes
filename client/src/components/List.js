@@ -8,7 +8,7 @@ function App() {
 <div class="tm-right">
         <main class="tm-main">
           <div id="drink" class="tm-page-content">
-            <!-- Drink Menu Page -->
+
             <nav class="tm-black-bg tm-drinks-nav">
               <ul>
                 <li>
@@ -26,7 +26,7 @@ function App() {
             <div id="cold" class="tm-tab-content">
               <div class="tm-list">
                 <div class="tm-list-item">          
-                  <img src="img/iced-americano.png" alt="Image" class="tm-list-item-img">
+                  <img src="img/iced-americano.png" alt="Image" class="tm-list-item-img"/>
                   <div class="tm-black-bg tm-list-item-text">
                     <h3 class="tm-list-item-name">Iced Americano<span class="tm-list-item-price">$10.25</span></h3>
                     <p class="tm-list-item-description">Here is a short description for the first item. Wave Cafe Template is provided by Tooplate.</p>
@@ -124,11 +124,9 @@ function App() {
                 </div>              
               </div>
             </div>
-            <!-- end Drink Menu Page -->
-          </div>
 
-          <!-- About Us Page -->
-          <div id="about" class="tm-page-content">
+          </div>
+                    <div id="about" class="tm-page-content">
             <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
               <h2 class="tm-text-primary tm-about-header">About Wave Cafe</h2>
               <div class="tm-list-item tm-list-item-2">                
@@ -150,9 +148,7 @@ function App() {
               <p>Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
             </div>
           </div>
-          <!-- end About Us Page -->
 
-          <!-- Special Items Page -->
           <div id="special" class="tm-page-content">
             <div class="tm-special-items">
               <div class="tm-black-bg tm-special-item">
@@ -199,9 +195,7 @@ function App() {
               </div>                      
             </div>            
           </div>
-          <!-- end Special Items Page -->
 
-          <!-- Contact Page -->
           <div id="contact" class="tm-page-content">
             <div class="tm-black-bg tm-contact-text-container">
               <h2 class="tm-text-primary">Contact Wave</h2>
