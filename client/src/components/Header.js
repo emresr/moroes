@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { Fragment } from "react"
 
-const Header = () => {
-	return <div></div>;
-};
+function Header() {
+	return (
+		<Fragment>
+			<div className="container"></div>
+		</Fragment>
+	)
+}
 
-export default Header;
+export default Header
