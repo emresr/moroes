@@ -1,15 +1,27 @@
-import React, { Fragment } from "react"
-import "./App.css"
-
-import Header from "./components/Header"
-import List from "./components/List"
+import React from "react"
 
 function Links() {
 	return (
 		<div class="tm-container">
-			<div class="tm-row">
-				<Header />
-			</div>
+			<nav class="tm-black-bg tm-drinks-nav">
+				<ul>
+					<li>
+						<a href="#" class="tm-tab-link active" data-id="cold">
+							Iced Coffee
+						</a>
+					</li>
+					<li>
+						<a href="#" class="tm-tab-link" data-id="hot">
+							Hot Coffee
+						</a>
+					</li>
+					<li>
+						<a href="#" class="tm-tab-link" data-id="juice">
+							Fruit Juice
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	)
 }
