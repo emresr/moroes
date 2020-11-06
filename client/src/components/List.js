@@ -1,3 +1,5 @@
+/*
+
 import React, { Fragment } from "react"
 import "./App.css"
 
@@ -220,6 +222,9 @@ function App() {
               </form>
             </div>
 
-            }
+           )  }
 
 export default App
+
+
+*/
