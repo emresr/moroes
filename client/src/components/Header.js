@@ -11,6 +11,16 @@ function Header() {
 				<nav class="tm-site-nav">
 					<ul class="tm-site-nav-ul">
 						<li class="tm-page-nav-item">
+							<a
+								href="localhost:3000/dashboard"
+								target="_blank"
+								class="tm-page-link"
+							>
+								<i class="fas fa-comments tm-page-link-icon"></i>
+								<span>Dashboard</span>
+							</a>
+						</li>
+						<li class="tm-page-nav-item">
 							<a href="#drink" class="tm-page-link active">
 								<i class="fas fa-mug-hot tm-page-link-icon"></i>
 								<span>Drink Menu</span>
