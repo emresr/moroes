@@ -1,18 +1,17 @@
 import React from "react"
 import "./App.css"
+import { render } from "react-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
-import Header from "./components/Header"
-import Links from "./components/Links"
+import Guest from "./Guest"
+import Dashboard from "./Dashboard"
 
-function App() {
-	return (
-		<div class="tm-container">
-			<div class="tm-row">
-				<Header />
-				<Links />
-			</div>
+const App = () => (
+	<Router>
+		<div>
+			<Route path="/" render={Guest} />
 		</div>
-	)
-}
+	</Router>
+)
 
 export default App

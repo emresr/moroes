@@ -6,7 +6,11 @@ function Links() {
 			<nav class="tm-black-bg tm-drinks-nav">
 				<ul>
 					<li>
-						<a href="#" class="tm-tab-link active" data-id="cold">
+						<a
+							href="localhost:3000/dashboard"
+							class="tm-tab-link active"
+							data-id="cold"
+						>
 							Iced Coffee
 						</a>
 					</li>
