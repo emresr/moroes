@@ -1,2 +1,1 @@
-Todo App
-
+Moroes - Menu app with stock dashboard
