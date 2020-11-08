@@ -12,7 +12,7 @@ function Header() {
 					<ul class="tm-site-nav-ul">
 						<li class="tm-page-nav-item">
 							<a
-								href="localhost:3000/dashboard"
+								href="/dashboard"
 								target="_blank"
 								class="tm-page-link"
 							>
@@ -21,7 +21,7 @@ function Header() {
 							</a>
 						</li>
 						<li class="tm-page-nav-item">
-							<a href="#drink" class="tm-page-link active">
+							<a href="#Drinknk" class="tm-page-link active">
 								<i class="fas fa-mug-hot tm-page-link-icon"></i>
 								<span>Drink Menu</span>
 							</a>
