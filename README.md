@@ -1,1 +1,1 @@
-Moroes - Menu app with stock dashboard
+moroes - Menu app with stock dashboard
