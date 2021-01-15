@@ -1,14 +1,10 @@
-#Gesova
+Moroes
 
-Infutur
-Statistics in mainpage
+## In future
 
-OUR APPS
-poll
-suggestion geeny
-about me pages- make own pages
-Plus1
-Recipes
+-
+-
+-
 
 ## Getting Started
 
