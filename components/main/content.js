@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Trending from "./trending";
-import All from "./all";
+import PriceChart from "./pricechart";
+import Order from "./order";
 function Content() {
   return (
     <div className="flex flex-wrap overflow-hidden">
-      <All />
-      <Trending />
+      <Order />
+      <PriceChart />
     </div>
   );
 }

@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div>
       <Head>
-        <title>Gesova</title>
+        <title>Moroes</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
