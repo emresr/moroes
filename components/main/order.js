@@ -1,48 +1,62 @@
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import { useState } from "react";
 import { FiArrowUp, FiArrowDown } from "react-icons/fi";
+import Image from "next/image";
 
 function Order() {
   return (
     <div className="w-full overflow-hidden sm:w-2/3">
       <div className="ml-40 mt-5">
-        <h1> Give Order</h1>
+        <h1> Pick Your Meal</h1>
 
         <div className="w-5/6">
-          <div className="border-solid rounded-md  border-2 my-2 flex">
-            <div className="w-9">
-              <div className="ml-2 mt-5">
-                <FiArrowUp className="w-4" />
-                <p>1</p>
-                <FiArrowDown />
+          <div className="bg-purple-500">
+            <h1>Coffees</h1>
+            <div className="h-240 flex items-center ">
+              <div className="flex-1 max-w-4xl mx-auto p-10 ">
+                <ul className="grid grid-cols-3 gap-8">
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                </ul>
               </div>
             </div>
-            <div className="max-w w-full">
-              <div className="space-x-3">
-                <h2 className="inline">Series </h2>
-                <h2 className="inline">Posted by emre </h2>
-                <h2 className="inline"> 2 hours ago</h2>
-              </div>
-              <h2 className="font-bold text-2xl"> Best crime series</h2>
-              <p className="ml-3">
-                {" "}
-                Maybe line of duty. DS Steve Arnott is transferred to the
-                anti-corruption unit after he refuses to participate in a
-                cover-up that involves an innocent man getting shot in a police
-                encounter. DS Steve Arnott is transferred to the anti-corruption
-                unit after he refuses to participate in a cover-up that involves
-                an innocent man getting shot in a police encounter.{" "}
-              </p>
-              <div className="float-right space-x-5 mt-2 mr-5">
-                <p className="inline">Share</p>
-                <p className="inline ">12 min</p>
+            <h1>Snacks</h1>
+            <div className="h-240 flex items-center ">
+              <div className="flex-1 max-w-4xl mx-auto p-10 ">
+                <ul className="grid grid-cols-3 gap-8">
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24 w-24">
+                      <Image
+                        className="m-4"
+                        src="/mocha.jpg"
+                        height={80}
+                        width={88}
+                        alt="Picture of the author"
+                      />
+                    </div>
+                  </li>
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                  <li className="bg-white rounded-lg shadow-xl">
+                    <div className="h-24"></div>{" "}
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div className="border-solid border-2 my-2 ">
-            <p>1</p>
-            <h2> Best crime series</h2>
-            <p> Maybe line of duty </p>
           </div>
         </div>
       </div>
