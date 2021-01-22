@@ -16,7 +16,7 @@ function Payout() {
           </div>
         </div>
         <div className="w-full center-items  ">
-          <button class="uppercase px-8 py-2 border border-green-600 text-green-600 max-w-max shadow-sm hover:shadow-lg">
+          <button className="uppercase px-8 py-2 border border-green-600 text-green-600 max-w-max shadow-sm hover:shadow-lg">
             Payout
           </button>
         </div>

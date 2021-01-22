@@ -25,7 +25,7 @@ function ProfileCard() {
         <h1 className="text-lg">Last order 5 days ago(13.01.2021) </h1>
       </div>
       <div className="w-full center-items  ">
-        <button class="uppercase px-8 py-2 border border-green-600 text-green-600 max-w-max shadow-sm hover:shadow-lg">
+        <button className="uppercase px-8 py-2 border border-green-600 text-green-600 max-w-max shadow-sm hover:shadow-lg">
           button
         </button>
       </div>
