@@ -4,11 +4,11 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-function Dashboard() {
+function ThisWeek() {
   return (
     <div>
       <Head>
-        <title>Dashboard | Moroes</title>
+        <title>This Week | Moroes</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -18,16 +18,6 @@ function Dashboard() {
           <div className="h-240 flex items-center ">
             <div className="flex-1 max-w-4xl mx-auto p-10 ">
               <ul className="grid grid-cols-2 gap-8">
-                <li className="bg-green-400 rounded-lg shadow-xl">
-                  <div className="h-24">
-                    <h1> Active Employees 5 </h1>
-                  </div>{" "}
-                </li>
-                <li className="bg-green-400 rounded-lg shadow-xl">
-                  <div className="h-24">
-                    <h1> Waiting Orders 2</h1>
-                  </div>{" "}
-                </li>
                 <li className="bg-green-400 rounded-lg shadow-xl">
                   <div className="h-24">
                     <h1> Today's Amount $119</h1>
@@ -46,4 +36,4 @@ function Dashboard() {
     </div>
   );
 }
-export default Dashboard;
+export default ThisWeek;

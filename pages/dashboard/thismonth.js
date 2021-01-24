@@ -4,11 +4,11 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-function Dashboard() {
+function ThisMonth() {
   return (
     <div>
       <Head>
-        <title>Dashboard | Moroes</title>
+        <title>This Month | Moroes</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,22 +20,12 @@ function Dashboard() {
               <ul className="grid grid-cols-2 gap-8">
                 <li className="bg-green-400 rounded-lg shadow-xl">
                   <div className="h-24">
-                    <h1> Active Employees 5 </h1>
-                  </div>{" "}
-                </li>
-                <li className="bg-green-400 rounded-lg shadow-xl">
-                  <div className="h-24">
-                    <h1> Waiting Orders 2</h1>
-                  </div>{" "}
-                </li>
-                <li className="bg-green-400 rounded-lg shadow-xl">
-                  <div className="h-24">
                     <h1> Today's Amount $119</h1>
                   </div>{" "}
                 </li>
                 <li className="bg-green-400 rounded-lg shadow-xl">
                   <div className="h-24">
-                    <h1>Total This Week $1398</h1>
+                    <h1>Total This Month $14509</h1>
                   </div>{" "}
                 </li>
               </ul>
@@ -46,4 +36,4 @@ function Dashboard() {
     </div>
   );
 }
-export default Dashboard;
+export default ThisMonth;

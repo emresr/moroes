@@ -33,6 +33,13 @@ function Sidebar() {
                   </div>
                 </li>
                 <li>
+                  <div className="my-2 border-solid border-2 h-10 w-full 	hover:bg-black-500  ">
+                    <Link href="/dashboard/history">
+                      <a> History</a>
+                    </Link>
+                  </div>
+                </li>
+                <li>
                   <div className="my-2 border-solid border-2 h-10 w-full">
                     <Link href="/dashboard/stocks">
                       <a> Stocks </a>
