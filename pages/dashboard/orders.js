@@ -11,18 +11,27 @@ function Orders() {
       </Head>
 
       <Layout>
-        <div className="mt-5 mx-3  ">
-          <h1> Orders</h1>
-          <ul>
-            <li>
-              <div className="my-2 border-solid border-2 mx-8 space-x-2">
-                <Link href="#">
-                  <a className="inline"> Emre</a>
-                </Link>
-                <p className="inline"> Pickup Date : 10.12.1998</p>
-              </div>
-            </li>
-          </ul>
+        <div>
+          <div className="mt-5 mx-3  ">
+            <table className="min-w-full leading-normal mx-auto">
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Items</th>
+                  <th>Pickup Date</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Centro comercial Moctezuma</td>
+                  <td>Francisco Chang</td>
+                  <td>Mexico</td>
+                  <td>Mexico</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </Layout>
     </div>

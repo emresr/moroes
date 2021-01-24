@@ -10,8 +10,8 @@ function Sidebar() {
             <div className="pt-2">
               <ul>
                 <li>
-                  <div className="my-2 border-solid border-2 h-10 w-full 	align-middle  ">
-                    <Link href="#">
+                  <div className="my-2 border-solid border-2 h-10 w-full 	hover:bg-black-500  ">
+                    <Link href="/dashboard/">
                       <a> General</a>
                     </Link>
                   </div>
@@ -19,7 +19,7 @@ function Sidebar() {
                 <li>
                   <div className="my-2 border-solid border-2 h-10 w-full">
                     <span className="p-2 bg-red-400">
-                      <Link href="#">
+                      <Link href="/dashboard/orders">
                         <a> Orders</a>
                       </Link>
                     </span>
@@ -27,8 +27,15 @@ function Sidebar() {
                 </li>
                 <li>
                   <div className="my-2 border-solid border-2 h-10 w-full">
-                    <Link href="#">
+                    <Link href="/dashboard/users">
                       <a> Users</a>
+                    </Link>
+                  </div>
+                </li>
+                <li>
+                  <div className="my-2 border-solid border-2 h-10 w-full">
+                    <Link href="/dashboard/stocks">
+                      <a> Stocks </a>
                     </Link>
                   </div>
                 </li>
