@@ -5,12 +5,7 @@ import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-function HomePage(lmaos) {
-  const intialState = lmaos;
-
-  const [characters, setCharacters] = useState(intialState.characters);
-  console.log(intialState);
-
+function HomePage() {
   return (
     <div>
       <Head>
@@ -81,27 +76,3 @@ function HomePage(lmaos) {
   );
 }
 export default HomePage;
-
-export async function getStaticProps() {
-  const client = new ApolloClient({
-    uri: "http://localhost:4000/",
-    cache: new InMemoryCache(),
-  });
-  const { data } = await client.query({
-    query: gql`
-      query {
-        items {
-          name
-          price
-          category
-          stock
-        }
-      }
-    `,
-  });
-  return {
-    props: {
-      lmaos: data.items,
-    },
-  };
-}

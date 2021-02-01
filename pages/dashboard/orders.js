@@ -23,12 +23,17 @@ function Orders() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                  <td>Mexico</td>
-                </tr>
+                <Link href="/order/">
+                  <tr>
+                    <td>
+                      {" "}
+                      <a>Emre</a>
+                    </td>
+                    <td>Mocha x2</td>
+                    <td>13:38</td>
+                    <td>9.55</td>
+                  </tr>
+                </Link>
               </tbody>
             </table>
           </div>
