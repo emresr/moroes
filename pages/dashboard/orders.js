@@ -12,28 +12,84 @@ function Orders() {
 
       <Layout>
         <div>
-          <div className="mt-5 mx-3  ">
-            <table className="min-w-full leading-normal mx-auto">
+          <div className=" max-w-lg m-auto mt-6">
+            <table className="w-full table-collapse">
               <thead>
                 <tr>
-                  <th>User</th>
-                  <th>Items</th>
-                  <th>Pickup Date</th>
-                  <th>Price</th>
+                  <th class="text-sm text-left uppercase font-semibold text-grey-darker p-3 bg-grey-light text-center">
+                    Items
+                  </th>
+                  <th class="text-sm text-left uppercase font-semibold text-grey-darker p-3 bg-grey-light text-center">
+                    Pickup Time
+                  </th>
+                  <th class="text-sm text-left uppercase font-semibold text-grey-darker p-3 bg-grey-light text-center">
+                    Name
+                  </th>
+                  <th class="text-sm text-left uppercase font-semibold text-grey-darker p-3 bg-grey-light text-center">
+                    Price
+                  </th>
+                  <th class="text-sm uppercase font-semibold text-grey-darker p-3 bg-grey-light"></th>
                 </tr>
               </thead>
-              <tbody>
-                <Link href="/order/">
-                  <tr>
-                    <td>
-                      {" "}
-                      <a>Emre</a>
-                    </td>
-                    <td>Mocha x2</td>
-                    <td>13:38</td>
-                    <td>9.55</td>
-                  </tr>
-                </Link>
+              <tbody className="">
+                <tr class="group cursor-pointer hover:bg-grey-lightest">
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center">
+                    Mocha x2 <br /> Donut x3 <br /> Donut x3
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center ">
+                    13:45
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center">
+                    Emre
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center">
+                    $9.95
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-sm group-hover:visible">
+                    <div class="invisible group-hover:visible">
+                      <a href="#" class="no-underline text-blue">
+                        View
+                      </a>{" "}
+                      <span class="text-grey">|</span>
+                      <a href="#" class="no-underline text-blue">
+                        Edit
+                      </a>{" "}
+                      <span class="text-grey">|</span>
+                      <a href="#" class="no-underline text-blue">
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="group cursor-pointer hover:bg-grey-lightest">
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center">
+                    Mocha x2 <br /> Donut x3 <br /> Donut x3
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center ">
+                    13:45
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center">
+                    Emre
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-center">
+                    $9.95
+                  </td>
+                  <td class="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-sm group-hover:visible">
+                    <div class="invisible group-hover:visible">
+                      <a href="#" class="no-underline text-blue">
+                        View
+                      </a>{" "}
+                      <span class="text-grey">|</span>
+                      <a href="#" class="no-underline text-blue">
+                        Edit
+                      </a>{" "}
+                      <span class="text-grey">|</span>
+                      <a href="#" class="no-underline text-blue">
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

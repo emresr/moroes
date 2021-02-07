@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function History() {
   return (
-    <div className="mt-3 ">
+    <div className="mt-0 ">
       <h1 className="font-bold text-2xl "> Order History</h1>
       <div className="inline-flex" id="main_menu">
         <ul className="flex flex-wrap p-1 md:p-2 sm:bg-gray-300 sm:rounded-md text-sm md:text-base">
@@ -30,13 +30,15 @@ export default function History() {
       </div>
       <div className="mt-4">
         <ul className="w-full rounded-lg mt-2 mb-3 text-blue-800">
-          <li>
-            <Link href="#">
-              <a className="inline w-fill rounded-lg flex p-4 bg-green-200 hover:bg-green-400">
-                Caramelatte + Donut x2
-              </a>
-            </Link>
-            <p className="inline"> 19$</p>
+          <li className="block">
+            <div className="">
+              <Link href="#">
+                <a className="inline w-fill rounded-lg flex p-4 bg-green-200 hover:bg-green-400">
+                  Caramelatte + Donut x2
+                </a>
+              </Link>
+              <p className="inline"> 19$</p>
+            </div>
           </li>
           <li>
             <Link href="#">

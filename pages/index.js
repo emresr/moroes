@@ -13,7 +13,7 @@ function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <Layout className="">
         <div className="w-full overflow-hidden sm:w-2/3">
           <div className="ml-40 mt-5">
             <h1> Pick Your Meal</h1>

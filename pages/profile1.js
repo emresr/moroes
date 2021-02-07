@@ -7,13 +7,11 @@ export default function Profile() {
   return (
     <div>
       <>
-        <div className="flex flex-wrap overflow-hidden">
-          <div className="w-full overflow-hidden sm:w-2/3">
-            <div className="ml-40 mt-5">
-              <History />
-            </div>
+        <div className="container flex flex-wrap py-6 bg-green-500">
+          <div className="w-full md:w-2/3 flex flex-col items-center px-3">
+            <History />
           </div>
-          <div className="w-full bg-green-200  overflow-hidden sm:w-1/3">
+          <div className="w-full md:w-1/3 flex flex-col items-center px-3">
             <ProfileCard />
           </div>
         </div>
