@@ -1,32 +1,19 @@
 import Link from "next/link";
-
+import { useState } from "react";
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
-      <div className=" h-20 bg-blue-500 flex justify-center">
-        <nav className="">
-          <Link href="/">
-            <a className="self-left no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8">
-              Moroes
-            </a>
-          </Link>
+      <div className="bg-red-700 flex justify-between">
+        <Link href="/">
+          <a className="py-2 mx-2 md:mx-5 flex text-bold text-2xl">Moroes</a>
+        </Link>
 
-          <Link href="/explore">
-            <a className="self-left no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8">
-              Explore
-            </a>
+        <div className=" my-auto">
+          <Link href="/">
+            <a className="my-auto ">Sign Up</a>
           </Link>
-          <Link href="/profile">
-            <a className="self-left no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8">
-              Profile
-            </a>
-          </Link>
-          <Link href="/cart">
-            <a className="self-left no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8">
-              Cart
-            </a>
-          </Link>
-        </nav>
+        </div>
       </div>
     </div>
   );
