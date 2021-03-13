@@ -5,8 +5,8 @@ import History from "../components/profile/history";
 import Link from "next/link";
 export default function Profile() {
   return (
-    <div>
-      <>
+    <Layout>
+      <div>
         <div className="flex flex-wrap overflow-hidden">
           <div className="w-full overflow-hidden sm:w-2/3">
             <div className="ml-40 mt-5">
@@ -17,7 +17,7 @@ export default function Profile() {
             <ProfileCard />
           </div>
         </div>
-      </>
-    </div>
+      </div>
+    </Layout>
   );
 }

@@ -1,6 +1,4 @@
 import Layout from "../components/layout/layout";
-import Items from "../components/cart/items";
-import Payout from "../components/cart/payout";
 import Head from "next/head";
 
 function Cart() {
@@ -12,9 +10,8 @@ function Cart() {
       </Head>
 
       <Layout>
-        <div className="flex flex-wrap overflow-hidden">
-          <Items />
-          <Payout />
+        <div className="">
+          <h1> Items in Cart</h1>
         </div>
       </Layout>
     </div>

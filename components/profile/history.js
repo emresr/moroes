@@ -29,26 +29,16 @@ export default function History() {
         </ul>
       </div>
       <div className="mt-4">
-        <ul className="w-full rounded-lg mt-2 mb-3 text-blue-800">
-          <li className="block">
-            <div className="">
-              <Link href="#">
-                <a className="inline w-fill rounded-lg flex p-4 bg-green-200 hover:bg-green-400">
-                  Caramelatte + Donut x2
-                </a>
-              </Link>
-              <p className="inline"> 19$</p>
-            </div>
-          </li>
-          <li>
+        <div className=" mt-2 mb-3 text-blue-800">
+          <div className="flex justify-between bg-red-300 hover:bg-red-200 rounded">
             <Link href="#">
-              <a className="inline w-fill rounded-lg flex p-4 bg-green-200 hover:bg-green-400">
-                Mocha x3 + 2 Water
+              <a className=" w-fill rounded-lg flex p-4  ">
+                Caramelatte + Donut x2
               </a>
             </Link>
-            <p className="inline"> 27$</p>
-          </li>
-        </ul>
+            <p className="my-auto mr-3"> 19$</p>
+          </div>
+        </div>
       </div>
     </div>
   );
