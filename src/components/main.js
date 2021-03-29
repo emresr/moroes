@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div>
       <div className="grid grid-cols-12">
-        <div className="col-span-6 col-start-3">
+        <div className="mx-10 md:mx-2 col-span-12 md:col-span-6 md:col-start-3">
           <h1 className="font-bold text-2xl">Pick your snacks</h1>
           <div className="grid grid-cols-3 gap-3">
             {!loading &&
