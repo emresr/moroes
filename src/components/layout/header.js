@@ -4,17 +4,34 @@ import { AUTH_TOKEN } from "../../constants";
 import { ImCross } from "react-icons/im";
 import { useQuery } from "@apollo/client";
 import { GET_CART } from "../../gql/cart/query";
+import { GET_CART_PRODUCTS } from "../../gql/cart/subscription";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const authToken = localStorage.getItem(AUTH_TOKEN);
   const [isCartOpen, setIsCartOpen] = useState(true);
-  const { data, loading } = useQuery(GET_CART, {
+  const { data, loading, subscribeToMore } = useQuery(GET_CART, {
     variables: {
-      id: 9,
+      id: 19,
     },
   });
   console.log(data);
+
+  subscribeToMore({
+    document: GET_CART_PRODUCTS,
+    variables: { cartId: 19 },
+    updateQuery: (prev, { subscriptionData }) => {
+      if (!subscriptionData.data) return prev;
+      const newCartProduct = subscriptionData.data;
+      console.log("lmao", newCartProduct);
+      return Object.assign({}, prev, {
+        cart: {
+          cartproducts: [newCartProduct, ...prev.cart.cartproducts],
+        },
+      });
+    },
+  });
+
   return (
     <div className="px-2 py-5 mx-auto w-full md:px-24 lg:px-4 bg-blue-300">
       <div className="relative flex items-center justify-between">
