@@ -9,7 +9,7 @@ import Main from "./main";
 import Profile from "./profile";
 import Products from "./item/items";
 import Product from "./item/item";
-
+import Cart from "./cart";
 function App() {
   return (
     <div className="h-screen ">
@@ -20,6 +20,7 @@ function App() {
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
+            <Route exact path="/cart" component={Cart} />
           </Switch>
         </BrowserRouter>
       </Layout>

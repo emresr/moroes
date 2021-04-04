@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import { useQuery } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import { GET_PRODUCTS } from "../gql/product/query";
+import { ADD_CART_PRODUCT } from "../gql/cart/mutation";
 
 const Main = () => {
   const [amount, setAmount] = useState(0);
   const { data, loading } = useQuery(GET_PRODUCTS);
   console.log(data);
+
+  const [addNew] = useMutation(ADD_CART_PRODUCT, {
+    variables: {
+      cartId: 19,
+      cartproductId: 4,
+    },
+  });
 
   return (
     <div>
@@ -45,11 +53,13 @@ const Main = () => {
                       >
                         +
                       </button>
-                      <img
-                        src="https://www.svgrepo.com/show/55711/cart.svg"
-                        width="20"
-                        className="my-auto"
-                      />
+                      <button onClick={addNew}>
+                        <img
+                          src="https://www.svgrepo.com/show/55711/cart.svg"
+                          width="20"
+                          className="my-auto"
+                        />
+                      </button>
                     </div>
                   </div>
                 </div>

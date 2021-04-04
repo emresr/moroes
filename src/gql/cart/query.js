@@ -5,8 +5,10 @@ const GET_CART = gql`
     cart(id: $id) {
       id
       cartproducts {
+        id
         product {
           name
+          price
         }
         amount
       }

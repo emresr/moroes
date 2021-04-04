@@ -2,14 +2,16 @@ import React from "react";
 import { useState } from "react";
 import { AUTH_TOKEN } from "../../constants";
 import { ImCross } from "react-icons/im";
-import { useQuery } from "@apollo/client";
+import { useQuery, useMutation } from "@apollo/client";
 import { GET_CART } from "../../gql/cart/query";
 import { GET_CART_PRODUCTS } from "../../gql/cart/subscription";
+import { DELETE_CARTPRODUCT } from "../../gql/cart/mutation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const authToken = localStorage.getItem(AUTH_TOKEN);
-  const [isCartOpen, setIsCartOpen] = useState(true);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
   const { data, loading, subscribeToMore } = useQuery(GET_CART, {
     variables: {
       id: 19,
@@ -31,6 +33,7 @@ const Header = () => {
       });
     },
   });
+  const [deleteSome] = useMutation(DELETE_CARTPRODUCT);
 
   return (
     <div className="px-2 py-5 mx-auto w-full md:px-24 lg:px-4 bg-blue-300">
@@ -113,9 +116,17 @@ const Header = () => {
                           <h1 className="my-auto">
                             {cartproduct.product.name} x{cartproduct.amount}
                           </h1>
-                          <div className="bg-red-600 my-auto p-1 rounded-md">
-                            <ImCross />
-                          </div>
+                          <button
+                            onClick={() =>
+                              deleteSome({
+                                variables: { cartproductId: cartproduct.id },
+                              })
+                            }
+                          >
+                            <div className="bg-red-600 my-auto p-1 rounded-md">
+                              <ImCross />
+                            </div>
+                          </button>
                         </div>
                       ))}
                   </div>
